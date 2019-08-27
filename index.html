@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+
+<title> Betygsnitt och Gymnasieexamens Krav </title>
+<meta charset="utf-8">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  text-align: center;
+  font-size: 30px;
+}
+p{
+  font-size: 20px
+}
+#Titel{
+  width: 35vw;
+  height: 5vh;
+  background-color: lightgrey;
+  text-align: center;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 20px;
+  margin-left: 30.5%;
+  margin-top: 2%;
+}
+  #info{
+    height: 3vh;
+    width: 15vw;
+    margin-left: 40.5%;
+    margin-top: 3%;
+    border: 2px solid black;
+    background-color: yellow;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px;
+  }
+  #Kursertxt{
+    margin-left: 15%;
+    margin-top: 3%;
+  }
+  #Poangtxt{
+    margin-left: 47%;
+    margin-top: -1%;
+  }
+  #Betygtxt{
+    margin-left: 80%;
+    margin-top: -1%;
+  }
+  #Kurs{
+    height: 3vh;
+    width: 15vw;
+    margin-left: 9%;
+    margin-top: 2%;
+    border: 5px solid;
+    border-radius: 15px;
+    text-align: center;
+  }
+  #Poang1{
+    text-align: center;
+    height: 3.5vh;
+    width: 6vw;
+    margin-right: 50%;
+    margin-top: -34%;
+    border: 3px solid black;
+    border-radius: 15px;
+    float: right;
+  }
+  #Poang2{
+    text-align: center;
+    height: 3.5vh;
+    width: 6vw;
+    margin-right: 50%;
+    margin-top: -30%;
+    border: 3px solid black;
+    border-radius: 15px;
+    float: right;
+  }
+  #Poang3{
+    text-align: center;
+    height: 3.5vh;
+    width: 6vw;
+    margin-right: 50%;
+    margin-top: -26%;
+    border: 3px solid black;
+    border-radius: 15px;
+    float: right;
+  }
+  #Poang4{
+    text-align: center;
+    height: 3.5vh;
+    width: 6vw;
+    margin-right: 50%;
+    margin-top: -22%;
+    border: 3px solid black;
+    border-radius: 15px;
+    float: right;
+  }
+  #Poang5{
+    text-align: center;
+    height: 3.5vh;
+    width: 6vw;
+    margin-right: 50%;
+    margin-top: -18%;
+    border: 3px solid black;
+    border-radius: 15px;
+    float: right;
+  }
+  #Poang6{
+    text-align: center;
+    height: 3.5vh;
+    width: 6vw;
+    margin-right: 50%;
+    margin-top: -14%;
+    border: 3px solid black;
+    border-radius: 15px;
+    float: right;
+  }
+  #Poang7{
+    text-align: center;
+    height: 3.5vh;
+    width: 6vw;
+    margin-right: 50%;
+    margin-top: -10%;
+    border: 3px solid black;
+    border-radius: 15px;
+    float: right;
+  }
+  #Poang8{
+    text-align: center;
+    height: 3.5vh;
+    width: 6vw;
+    margin-right: 50%;
+    margin-top: -6%;
+    border: 3px solid black;
+    border-radius: 15px;
+    float: right;
+  }
+  #Poang9{
+    text-align: center;
+    height: 3.5vh;
+    width: 6vw;
+    margin-right: 50%;
+    margin-top: -2%;
+    border: 3px solid black;
+    border-radius: 15px;
+    float: right;
+  }
+
+  .BetygDrop{
+    height: 3.5vh;
+    width: 6vw;
+    margin-left: 80%;
+    margin-top: -1.5%;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+#betyg1{
+   float: right;
+   margin-left: 45%;
+   margin-right: 17%;
+   margin-top: -34%;
+   height: 3vh;
+   width: 3.5vw;
+}
+#betyg2{
+  float: right;
+  margin-left: 45%;
+  margin-right: 17%;
+  margin-top: -30%;
+  height: 3vh;
+  width: 3.5vw;
+}
+#betyg3{
+float: right;
+margin-left: 45%;
+margin-right: 17%;
+margin-top: -26%;
+height: 3vh;
+width: 3.5vw;
+}
+#betyg4{
+float: right;
+margin-left: 45%;
+margin-right: 17%;
+margin-top: -22%;
+height: 3vh;
+width: 3.5vw;
+}
+#betyg5{
+float: right;
+margin-left: 45%;
+margin-right: 17%;
+margin-top: -18%;
+height: 3vh;
+width: 3.5vw;
+}
+#betyg6{
+float: right;
+margin-left: 45%;
+margin-right: 17%;
+margin-top: -14%;
+height: 3vh;
+width: 3.5vw;
+}
+#betyg7{
+float: right;
+margin-left: 45%;
+margin-right: 17%;
+margin-top: -10%;
+height: 3vh;
+width: 3.5vw;
+}
+#betyg8{
+float: right;
+margin-left: 45%;
+margin-right: 17%;
+margin-top: -6%;
+height: 3vh;
+width: 3.5vw;
+}
+#betyg9{
+float: right;
+margin-left: 45%;
+margin-right: 17%;
+margin-top: -2%;
+height: 3vh;
+width: 3.5vw;
+}
+#button{
+  height: 4vh;
+  width: 8vw;
+  margin-right: 49%;
+  margin-top: 2%;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-size: 20px;
+  float: right;
+}
+#Betygsnitt{
+  height: 3vh;
+  width: 8vw;
+  margin-right: 49%;
+  margin-top: 1%;
+  float: right;
+  font-size: 20px;
+  border: 5px solid black;
+  border-radius: 15px;
+  text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+<div id="Titel">
+    <h1> Räkna ut Merit och Gymnasieexamen Mål
+  </div>
+<div id="info">
+    <h2> Lägg till Kurser och Poäng </h2>
+  </div>
+<div id="Kursertxt">
+  <p><b> Kurser: </b></p>
+</div>
+<div id="Poangtxt">
+  <p><b> Poäng: </b></p>
+</div>
+<div id="Betygtxt">
+  <p><b> Betyg: </b></p>
+</div>
+
+  <p id="Kurs"> Svenska 3 </p>
+  <p id="Kurs"> Engelska 7 </p>
+  <p id="Kurs"> Webbutveckling 2 </p>
+  <p id="Kurs"> Kemi 1 </p>
+  <p id="Kurs"> Programmering 2</p>
+  <p id="Kurs"> Gränssnittsdesign 1 </p>
+  <p id="Kurs"> Webbdesign 1</p>
+  <p id="Kurs"> DatorTeknik 1 </p>
+  <p id="Kurs"> Fysik 1 </p>
+
+  <form>
+  <select class="BetygDrop"id="betyg1">
+  <option value="0">-</option>
+  <option value="0">F</option>
+  <option value="10">E</option>
+  <option value="12.5">D</option>
+  <option value="15">C</option>
+  <option value="17.5">B</option>
+  <option value="20">A</option>
+  </select>
+
+  <select class="BetygDrop"id="betyg2">
+  <option value="0">-</option>
+  <option value="0">F</option>
+  <option value="10">E</option>
+  <option value="12.5">D</option>
+  <option value="15">C</option>
+  <option value="17.5">B</option>
+  <option value="20">A</option>
+  </select>
+
+  <select class="BetygDrop"id="betyg3">
+  <option value="0">-</option>
+  <option value="0">F</option>
+  <option value="10">E</option>
+  <option value="12.5">D</option>
+  <option value="15">C</option>
+  <option value="17.5">B</option>
+  <option value="20">A</option>
+  </select>
+
+  <select class="BetygDrop"id="betyg4">
+  <option value="0">-</option>
+  <option value="0">F</option>
+  <option value="10">E</option>
+  <option value="12.5">D</option>
+  <option value="15">C</option>
+  <option value="17.5">B</option>
+  <option value="20">A</option>
+  </select>
+
+  <select class="BetygDrop"id="betyg5">
+  <option value="0">-</option>
+  <option value="0">F</option>
+  <option value="10">E</option>
+  <option value="12.5">D</option>
+  <option value="15">C</option>
+  <option value="17.5">B</option>
+  <option value="20">A</option>
+  </select>
+
+  <select class="BetygDrop"id="betyg6">
+  <option value="0">-</option>
+  <option value="0">F</option>
+  <option value="10">E</option>
+  <option value="12.5">D</option>
+  <option value="15">C</option>
+  <option value="17.5">B</option>
+  <option value="20">A</option>
+  </select>
+
+  <select class="BetygDrop"id="betyg7">
+  <option value="0">-</option>
+  <option value="0">F</option>
+  <option value="10">E</option>
+  <option value="12.5">D</option>
+  <option value="15">C</option>
+  <option value="17.5">B</option>
+  <option value="20">A</option>
+  </select>
+
+  <select class="BetygDrop"id="betyg8">
+  <option value="0">-</option>
+  <option value="0">F</option>
+  <option value="10">E</option>
+  <option value="12.5">D</option>
+  <option value="15">C</option>
+  <option value="17.5">B</option>
+  <option value="20">A</option>
+  </select>
+
+  <select class="BetygDrop"id="betyg9">
+  <option value="0">-</option>
+  <option value="0">F</option>
+  <option value="10">E</option>
+  <option value="12.5">D</option>
+  <option value="15">C</option>
+  <option value="17.5">B</option>
+  <option value="20">A</option>
+  </select>
+  </form>
+
+  <form>
+  <select id="Poang1">
+    <option value="100">100</option>
+  </select>
+
+  <select id="Poang2">
+  <option value="100">100</option>
+  </select>
+
+  <select id="Poang3">
+  <option value="100">100</option>
+  </select>
+
+  <select id="Poang4">
+  <option value="100">100</option>
+  </select>
+
+  <select id="Poang5">
+    <option value="100">100</option>
+  </select>
+
+  <select id="Poang6">
+  <option value="100">100</option>
+  </select>
+
+  <select id="Poang7">
+  <option value="100">100</option>
+  </select>
+
+  <select id="Poang8">
+  <option value="100">100</option>
+  </select>
+
+  <select id="Poang9">
+    <option value="100">100</option>
+  </select>
+  </form>
+
+  <br>
+
+  <button id="button" type="button" onclick="MyFunction()">
+    Beräkna
+  </button>
+  <br>
+
+
+  <div id="Betygsnitt">
+  </div>
+
+<script>
+function MyFunction() {
+  var a = document.getElementById("betyg1").value;
+  var b = document.getElementById("betyg2").value;
+  var c = document.getElementById("betyg3").value;
+  var d = document.getElementById("betyg4").value;
+  var e = document.getElementById("betyg5").value;
+  var f = document.getElementById("betyg6").value;
+  var g = document.getElementById("betyg7").value;
+  var h = document.getElementById("betyg8").value;
+  var k = document.getElementById("betyg9").value;
+  var a = Math.floor(a)
+  var b = Math.floor(b)
+  var c = Math.floor(c)
+  var d = Math.floor(d)
+  var e = Math.floor(e)
+  var f = Math.floor(f)
+  var g = Math.floor(g)
+  var h = Math.floor(h)
+  var k = Math.floor(k)
+  var a1 = document.getElementById("Poang1").value;
+  var b1 = document.getElementById("Poang2").value;
+  var c1 = document.getElementById("Poang3").value;
+  var d1 = document.getElementById("Poang4").value;
+  var e1 = document.getElementById("Poang5").value;
+  var f1 = document.getElementById("Poang6").value;
+  var g1 = document.getElementById("Poang7").value;
+  var h1 = document.getElementById("Poang8").value;
+  var k1 = document.getElementById("Poang9").value;
+  var a1 = Math.floor(a1)
+  var b1 = Math.floor(b1)
+  var c1 = Math.floor(c1)
+  var d1 = Math.floor(d1)
+  var e1 = Math.floor(e1)
+  var f1 = Math.floor(f1)
+  var g1 = Math.floor(g1)
+  var h1 = Math.floor(h1)
+  var k1 = Math.floor(k1)
+  var a2 = a * a1;
+  var b2 = b * b1;
+  var c2 = c * c1;
+  var d2 = d * d1;
+  var e2 = e * e1;
+  var f2 = f * f1;
+  var g2 = g * g1;
+  var h2 = h * h1;
+  var k2 = k * k1;
+  var p = a2 + b2 + c2 + d2 + e2 + f2 + g2 + h2 + k2;
+  var x = p / 1200 ;
+
+  var n = x.toFixed(2);
+  var u = a1 + b1 + c1 + d1 + e1 + f1 + g1 + h1 + k1;
+
+  document.getElementById("Betygsnitt").innerHTML = n ;
+}
+</script>
+</body>
+</html>
